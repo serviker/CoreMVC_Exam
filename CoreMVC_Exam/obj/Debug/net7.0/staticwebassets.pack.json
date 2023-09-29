@@ -1,0 +1,413 @@
+{
+  "Files": [
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CoreMVC_Exam.bundle.scp.css",
+      "PackagePath": "staticwebassets\\CoreMVC_Exam.bundle.scp.css"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\css\\coda-slider.css",
+      "PackagePath": "staticwebassets\\css\\coda-slider.css"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\css\\templatemo_style.css",
+      "PackagePath": "staticwebassets\\css\\templatemo_style.css"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\images\\facebook.png",
+      "PackagePath": "staticwebassets\\images\\facebook.png"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\images\\gallery\\image_01.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery\\image_01.jpg"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\images\\gallery\\image_02.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery\\image_02.jpg"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\images\\gallery\\image_03.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery\\image_03.jpg"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\images\\gallery\\image_04.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery\\image_04.jpg"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\images\\gallery\\image_05.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery\\image_05.jpg"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\images\\gallery\\image_06.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery\\image_06.jpg"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\images\\linkedin.png",
+      "PackagePath": "staticwebassets\\images\\linkedin.png"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\images\\myspace.png",
+      "PackagePath": "staticwebassets\\images\\myspace.png"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\images\\onebit_08.png",
+      "PackagePath": "staticwebassets\\images\\onebit_08.png"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\images\\onebit_11.png",
+      "PackagePath": "staticwebassets\\images\\onebit_11.png"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\images\\onebit_12.png",
+      "PackagePath": "staticwebassets\\images\\onebit_12.png"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\images\\onebit_17.png",
+      "PackagePath": "staticwebassets\\images\\onebit_17.png"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\images\\onebit_21.png",
+      "PackagePath": "staticwebassets\\images\\onebit_21.png"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\images\\readmore.png",
+      "PackagePath": "staticwebassets\\images\\readmore.png"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\images\\technorati.png",
+      "PackagePath": "staticwebassets\\images\\technorati.png"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\images\\templatemo-list.png",
+      "PackagePath": "staticwebassets\\images\\templatemo-list.png"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\images\\templatemo_content.jpg",
+      "PackagePath": "staticwebassets\\images\\templatemo_content.jpg"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\images\\templatemo_footer.jpg",
+      "PackagePath": "staticwebassets\\images\\templatemo_footer.jpg"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\images\\templatemo_image_01.jpg",
+      "PackagePath": "staticwebassets\\images\\templatemo_image_01.jpg"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\images\\templatemo_image_02.jpg",
+      "PackagePath": "staticwebassets\\images\\templatemo_image_02.jpg"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\images\\templatemo_image_03.jpg",
+      "PackagePath": "staticwebassets\\images\\templatemo_image_03.jpg"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\images\\templatemo_image_04.jpg",
+      "PackagePath": "staticwebassets\\images\\templatemo_image_04.jpg"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\images\\templatemo_logo.png",
+      "PackagePath": "staticwebassets\\images\\templatemo_logo.png"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\images\\templatemo_logo_PNG_source.png",
+      "PackagePath": "staticwebassets\\images\\templatemo_logo_PNG_source.png"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\images\\templatemo_menu.jpg",
+      "PackagePath": "staticwebassets\\images\\templatemo_menu.jpg"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\images\\templatemo_menu_bg.png",
+      "PackagePath": "staticwebassets\\images\\templatemo_menu_bg.png"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\images\\templatmeo_header.jpg",
+      "PackagePath": "staticwebassets\\images\\templatmeo_header.jpg"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\images\\twitter.png",
+      "PackagePath": "staticwebassets\\images\\twitter.png"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\js\\coda-slider.js",
+      "PackagePath": "staticwebassets\\js\\coda-slider.js"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\js\\jquery-1.2.6.js",
+      "PackagePath": "staticwebassets\\js\\jquery-1.2.6.js"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\js\\jquery.easing.1.3.js",
+      "PackagePath": "staticwebassets\\js\\jquery.easing.1.3.js"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\js\\jquery.localscroll-1.2.5.js",
+      "PackagePath": "staticwebassets\\js\\jquery.localscroll-1.2.5.js"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\js\\jquery.scrollTo-1.3.3.js",
+      "PackagePath": "staticwebassets\\js\\jquery.scrollTo-1.3.3.js"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\js\\jquery.serialScroll-1.2.1.js",
+      "PackagePath": "staticwebassets\\js\\jquery.serialScroll-1.2.1.js"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "F:\\STEP\\My_Project\\ASPNet.CoreMVC\\CoreMVC_Exam\\CoreMVC_Exam\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.CoreMVC_Exam.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.CoreMVC_Exam.props",
+      "PackagePath": "build\\CoreMVC_Exam.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.CoreMVC_Exam.props",
+      "PackagePath": "buildMultiTargeting\\CoreMVC_Exam.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.CoreMVC_Exam.props",
+      "PackagePath": "buildTransitive\\CoreMVC_Exam.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

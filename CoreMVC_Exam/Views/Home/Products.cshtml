@@ -1,0 +1,102 @@
+﻿@{
+    ViewData["Title"] = "Products Page";
+}
+
+<h2>Products</h2>
+<table id="MyProductsTable" class="dataTable">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>IdCategory</th>
+            <th>SerialNumber</th>
+            <th>ReleaseDate</th>
+            <th>Price</th>
+            <th>brand</th>
+            <th>ModelName</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<br />
+<input type="button" class="btn btn-outline-secondary" id="show" value="Show" />
+<button class="btn btn-outline-success" onclick="@("window.location.href='" + @Url.Action("CreateProduct", "Home") + "'");">Create new product</button>
+<script>
+    $('#show').click(function (e) {
+        //alert('show');
+
+        // подача Ajax-запроса на сервер при помощи JQuery
+        $.ajax({
+            url: '/api/Product',
+            method: "GET",
+            dataType: 'JSON',
+            contentType: 'application/json',
+            cache: false,
+            processData: false,
+            success: function (data) {
+                console.log(data);
+
+                // получить ссылку на таблицу с результатами
+                var table = $('#MyProductsTable');
+
+                // удалить все старые строки
+                table.find("tbody tr").remove();
+
+                // перебрать коллекцию в Json и создать новые строки таблицы на их основе
+                data.forEach(function (Product) {
+                    table.append("<tr><td>" + Product.id +
+                        "</td><td>" + Product.idCategory +
+                        "</td><td>" + Product.serialNumber +
+                        "</td><td>" + Product.releaseDate +
+                        "</td><td>" + Product.price +
+                        "</td><td>" + Product.brand +
+                        "</td><td>" + Product.modelName +
+                        "</td><td><button class='btn btn-outline-warning js-edit' data-Id=" + Product.id + ">Edit</button>&nbsp;<button class='btn btn-outline-danger js-delete' data-Id=" + Product.id + ">Delete</button></td></tr>");
+                });
+            }
+        })
+    });
+
+    $("#create").on("click", ".js-create", function () {
+        var button = $(this);
+        // alert(button.attr("data-Id"));
+        window.location.href = '/Home/CreateProduct/'; //+ button.attr("data-Id");
+    });
+
+    $("#MyProductsTable").on("click", ".js-edit", function () {
+        var button = $(this);
+        //alert(button.attr("data-Id"));
+        window.location.href = '/Home/EditProduct/' + button.attr("data-Id");
+    });
+
+    $("#MyProductsTable").on("click", ".js-delete", function () {
+        var button = $(this);
+
+        //if (confirm("Are you sure you want to delete this author?"))
+        {
+            $.ajax({
+                url: "/api/Product/" + button.attr("data-Id"),
+                method: "DELETE",
+                // beforeSend: function (xheader) {
+                //     var token = sessionStorage.getItem(tokenKey);
+                //     console.log(token);
+                //     xheader.setRequestHeader("Authorization", "Bearer " + token);
+                // },
+                success: function () {
+
+                    // получить по кнопке удаляемой строки саму удаляемую строку
+                    var row = button[0].parentNode.parentNode;
+
+                    // удалить строку из таблицы
+                    row.parentNode.removeChild(row);
+                }
+            }).fail(function () {
+                alert('fail');
+            })
+        }
+    });
+
+
+
+</script>

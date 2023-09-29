@@ -1,0 +1,128 @@
+﻿@model CoreMVC_Exam.Models.Order
+
+@{
+    ViewData["Title"] = "CreateOrder";
+}
+
+<h1>Create Order</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreateClient" id="validForm">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Id" class="control-label"></label>
+                <input asp-for="Id" class="form-control" />
+                <span asp-validation-for="Id" class="text-danger"></span> 
+            </div>
+            <div class="form-group">
+                <label asp-for="IdProduct" class="control-label"></label>
+                <select asp-for="IdProduct" class="form-control" asp-items="ViewBag.IdProduct"></select>
+                <span asp-validation-for="IdProduct" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdClient" class="control-label"></label>
+                <select asp-for="IdClient" class="form-control" asp-items="ViewBag.IdClient"></select>
+                <span asp-validation-for="IdClient" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StartDate" class="control-label"></label>
+                <input asp-for="StartDate" class="form-control" />
+                <span asp-validation-for="StartDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EndDate" class="control-label"></label>
+                <input asp-for="EndDate" class="form-control" />
+                <span asp-validation-for="EndDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            </br>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-outline-success" />
+                <button class="btn btn-outline-info" onclick="@("window.location.href='" + @Url.Action("Orders", "Home") + "'");">Back to List</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<script>
+
+    $('#validForm').submit(function (e) {
+
+        // предовратить отправку формы
+        e.preventDefault();
+
+        // подача Ajax-запроса на сервер при помощи JQuery
+        $.ajax({
+            url: '/api/Order/', // + $('#Id').val(),
+            method: "POST",
+            data: JSON.stringify({
+                id: $('#Id').val(),
+                idProduct: $('#IdProduct').val(),
+                idClient: $('#IdClient').val(),
+                startDate: $('#StartDate').val(),
+                endDate: $('#EndDate').val(),
+                price: $('#Price').val()
+            }),
+            dataType: 'JSON',
+            contentType: 'application/json',
+            cache: false,
+            processData: false,
+            // beforeSend: function (xheader) {
+            //     var token = sessionStorage.getItem(tokenKey);
+            //     console.log(token);
+            //     xheader.setRequestHeader("Authorization", "Bearer " + token);
+            // },
+            success: function (data) {
+                console.log(data);
+                document.location.href = "/Home/Orders";
+            },
+            error: function (data) {
+                onError(data);
+            }
+        })
+    });
+
+    function onError(data) {
+        console.log(data);
+        //alert(data);
+
+        // скрыть все ошибки, показанные на предыдущем шаге валидации
+        $("input").removeClass('input-validation-error');
+        $("select").removeClass('input-validation-error');
+        $("span[data-valmsg-for]").removeClass('field-validation-error');
+        $("span[data-valmsg-for]").addClass('field-validation-valid');
+        $("span[data-valmsg-for]").text("");
+
+        // если произошла ошибка валидации
+        if (data.status == 400) {
+            console.log(data.responseJSON);
+
+            // перебрать все полученные ошибки валидации
+            //$.each(data.responseJSON.ModelState, function (key, value) {
+            $.each(data.responseJSON.errors, function (key, value) {
+                //key = key.split('.')[1];
+
+                console.log(key);
+                console.log(value);
+
+                // выделить текстовое поле с ошибкой
+                var filter = "input[name='" + key + "']";
+                $(filter).addClass('input-validation-error');
+
+                // показать сообщение об ошибке для каждого текстового поля с ошибкой
+                var validationMessageElement = $('span[data-valmsg-for="' + key + '"]');
+                validationMessageElement.removeClass('field-validation-valid');
+                validationMessageElement.addClass('field-validation-error');
+                validationMessageElement.text(value[0]);
+            });
+        }
+    }
+
+</script>

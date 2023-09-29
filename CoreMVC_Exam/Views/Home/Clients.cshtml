@@ -1,0 +1,102 @@
+﻿@{
+    ViewData["Title"] = "Clients Page";
+}
+
+
+<h2>Clients</h2>
+<div class="text-center">
+    <table id="MyClientsTable" class="dataTable">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>IdPassport</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Address</th>
+                <th>Phone</th>
+                <th>DateBirth</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    
+</div>
+<br />
+<input type="button" class="btn btn-outline-secondary" id="show" value="Show" />
+<button class="btn btn-outline-success" onclick="@("window.location.href='" + @Url.Action("CreateClient", "Home") + "'");">Create new client</button>
+                 
+
+<script>
+    $('#show').click(function (e) {
+        //alert('show');
+
+        // подача Ajax-запроса на сервер при помощи JQuery
+        $.ajax({
+            url: '/api/Client',
+            method: "GET",
+            dataType: 'JSON',
+            contentType: 'application/json',
+            cache: false,
+            processData: false,
+            success: function (data) {
+                console.log(data);
+
+                // получить ссылку на таблицу с результатами
+                var table = $('#MyClientsTable');
+
+                // удалить все старые строки
+                table.find("tbody tr").remove();
+
+                // перебрать коллекцию в Json и создать новые строки таблицы на их основе
+                data.forEach(function (Client) {
+                    table.append("<tr><td>" + Client.id +
+                        "</td><td>" + Client.idPassport +
+                        "</td><td>" + Client.firstName +
+                        "</td><td>" + Client.lastName +
+                        "</td><td>" + Client.address +
+                        "</td><td>" + Client.phone +
+                        "</td><td>" + Client.dateBirth +
+                        "</td><td><button class='btn btn-outline-warning js-edit' data-Id=" + Client.id + ">Edit</button>&nbsp;<button class='btn btn-outline-danger js-delete' data-Id=" + Client.id + ">Delete</button></td></tr>");
+                });
+            }
+        })
+    });
+
+    $("#create").on("click", ".js-create", function () {
+        var button = $(this);
+        // alert(button.attr("data-Id"));
+        window.location.href = '/Home/CreateClient/'; //+ button.attr("data-Id");
+    });
+
+    $("#MyClientsTable").on("click", ".js-edit", function () {
+        var button = $(this);
+        //alert(button.attr("data-Id"));
+        window.location.href = '/Home/EditClient/' + button.attr("data-Id");
+    });
+
+    $("#MyClientsTable").on("click", ".js-delete", function () {
+        var button = $(this);
+
+        //if (confirm("Are you sure you want to delete this author?"))
+        {
+            $.ajax({
+                url: "/api/Client/" + button.attr("data-Id"),
+                method: "DELETE",
+                success: function () {
+
+                    // получить по кнопке удаляемой строки саму удаляемую строку
+                    var row = button[0].parentNode.parentNode;
+
+                    // удалить строку из таблицы
+                    row.parentNode.removeChild(row);
+                }
+            }).fail(function () {
+                alert('fail');
+            })
+        }
+    });
+
+
+
+</script>

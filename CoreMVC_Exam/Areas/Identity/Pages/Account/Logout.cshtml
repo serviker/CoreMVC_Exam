@@ -1,0 +1,29 @@
+﻿@page
+@model LogoutModel
+@{
+    ViewData["Title"] = "Log out";
+}
+
+<header>
+    @{
+        if (User.Identity?.IsAuthenticated ?? false)
+        {
+            <form class="navigation" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/", new { area = "" })" method="post">
+                <button type="submit" class="navigation"></button>
+            </form>
+        }
+        else
+        {
+            <p>You have successfully logged out of the application.</p>
+        }
+    }
+</header>
+<script>
+    $(document).ready(function () {
+        // Check if the submit button exists and trigger its click event
+        var submitButton = $("form button[type='submit']");
+        if (submitButton.length > 0) {
+            submitButton.click();
+        }
+    });
+</script>

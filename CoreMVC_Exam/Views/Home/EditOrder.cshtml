@@ -1,0 +1,129 @@
+﻿@model CoreMVC_Exam.Models.Order
+
+@{
+    ViewBag.Title = "Edit Order";
+}
+
+<h2>@ViewBag.Title</h2>
+<h2>@Model.Id</h2>
+
+<form id="validForm" action="" method="post">
+
+    @Html.ValidationSummary(true, "Please fix the following errors!")
+    <div class="form-group">
+        @Html.LabelFor(m => m.IdProduct)
+        @Html.TextBoxFor(m => m.IdProduct, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.IdProduct)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.IdClient)
+        @Html.TextBoxFor(m => m.IdClient, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.IdClient)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.StartDate)
+        @Html.TextBoxFor(m => m.StartDate, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.StartDate)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.EndDate)
+        @Html.TextBoxFor(m => m.EndDate, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.EndDate)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Price)
+        @Html.TextBoxFor(m => m.Price, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Price)
+    </div>
+
+    @Html.HiddenFor(m => m.Id)
+    </br>
+
+    <button class="btn btn-outline-warning">Save</button>
+    <button class="btn btn-outline-success" onclick="@("window.location.href='" + @Url.Action("Orders", "Home") + "'");">Cancel</button>
+
+</form>
+
+<script>
+
+    function onError(data) {
+        console.log(data);
+        //alert(data);
+
+        // скрыть все ошибки, показанные на предыдущем шаге валидации
+        $("input").removeClass('input-validation-error');
+        $("select").removeClass('input-validation-error');
+        $("span[data-valmsg-for]").removeClass('field-validation-error');
+        $("span[data-valmsg-for]").addClass('field-validation-valid');
+        $("span[data-valmsg-for]").text("");
+
+        // если произошла ошибка валидации
+        if (data.status == 400) {
+            alert("400")
+            console.log(data.responseJSON);
+
+            // перебрать все полученные ошибки валидации
+            //$.each(data.responseJSON.ModelState, function (key, value) {
+            $.each(data.responseJSON.errors, function (key, value) {
+                //key = key.split('.')[1];
+
+                console.log(key);
+                console.log(value);
+
+                // выделить текстовое поле с ошибкой
+                var filter = "input[name='" + key + "']";
+                $(filter).addClass('input-validation-error');
+
+                // показать сообщение об ошибке для каждого текстового поля с ошибкой
+                var validationMessageElement = $('span[data-valmsg-for="' + key + '"]');
+                validationMessageElement.removeClass('field-validation-valid');
+                validationMessageElement.addClass('field-validation-error');
+                validationMessageElement.text(value[0]);
+            });
+        }
+    }
+
+    $('#validForm').submit(function (e) {
+
+        // предовратить отправку формы
+        e.preventDefault();
+
+        //alert("send");
+        //var form = $(this);
+
+        // подача Ajax-запроса на сервер при помощи JQuery
+        $.ajax({
+            url: '/api/Order/' + $('#Id').val(),
+            method: "PUT",
+            data: JSON.stringify({
+                id: $('#Id').val(),
+                idProduct: $('#IdProduct').val(),
+                idClient: $('#IdClient').val(),
+                startDate: $('#StartDate').val(),
+                endDate: $('#EndDate').val(),
+                price: $('#Price').val()
+            }),
+            dataType: 'JSON',
+            contentType: 'application/json',
+            cache: false,
+            processData: false,
+            // beforeSend: function (xheader) {
+            //     var token = sessionStorage.getItem(tokenKey);
+            //     console.log(token);
+            //     xheader.setRequestHeader("Authorization", "Bearer " + token);
+            // },
+            success: function (data) {
+                console.log(data);
+                document.location.href = "/Home/Orders";
+            },
+            error: function (data) {
+                onError(data);
+            }
+        })
+    });
+
+</script>

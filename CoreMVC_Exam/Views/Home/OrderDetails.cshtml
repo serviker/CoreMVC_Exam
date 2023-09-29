@@ -1,0 +1,86 @@
+﻿@{
+    ViewData["Title"] = "OrderDeteils";
+}
+
+<h2>ClientOrders</h2>
+<table id="MyOrderDeteilsTable" class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>IdOrder</th>
+            <th>IdProduct</th>
+            <th>Brand</th>
+            <th>IdClient</th>
+            <th>StartDate</th>
+            <th>EndDate</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+ public string IdOrder { get; set; }
+
+        public string? IdProduct { get; set; }
+
+        public string? Brand { get; set; }
+
+        public string? IdClient { get; set; }
+
+        public string? ClientName { get; set; }
+
+        public string? StartDate { get; set; }
+
+        public string? EndDate { get; set; }
+
+        public string? Price { get; set; }
+
+<br />
+<input type="button" class="btn btn-primary" id="show" value="Show" />
+<br />
+
+<script>
+    $('#show').click(function (e) {
+        //alert('show');
+
+        // подача Ajax-запроса на сервер при помощи JQuery
+        $.ajax({
+            url: '/api/OrderDeteils',
+            method: "GET",
+            dataType: 'JSON',
+            contentType: 'application/json',
+            cache: false,
+            processData: false,
+            // beforeSend: function (xheader) {
+            //     var token = sessionStorage.getItem(tokenKey);
+            //     console.log(token);
+            //     xheader.setRequestHeader("Authorization", "Bearer " + token);
+            // },
+            success: function (data) {
+                console.log(data);
+
+                // получить ссылку на таблицу с результатами
+                var table = $('#MyOrderDeteilsTable');
+
+                // удалить все старые строки
+                table.find("tbody tr").remove();
+
+                // перебрать коллекцию в Json и создать новые строки таблицы на их основе
+                data.forEach(function (OrderDeteils) {
+                    table.append("<tr><td>" + OrderDeteils.idOrder +
+                        "</td><td>" + OrderDeteils.idProduct +
+                        "</td><td>" + OrderDeteils.brand +
+                        "</td><td>" + OrderDeteils.idClient +
+                        "</td><td>" + OrderDeteils.startDate +
+                        "</td><td>" + OrderDeteils.endDate +
+                        "</td><td>" + OrderDeteils.price +
+                        "</td><td><button class='btn-link js-edit' data-Id=" + OrderDeteils.idOrder + ">Edit</button>&nbsp;<button class='btn-link js-delete' data-Id=" + OrderDeteils.idOrder + ">Delete</button></td></tr>");
+                });
+            }
+        })
+    });
+
+    
+
+
+
+</script>

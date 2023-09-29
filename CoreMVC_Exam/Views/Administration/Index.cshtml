@@ -1,0 +1,108 @@
+﻿@model CoreMVC_Exam.ViewModels.AdministrationFormViewModel
+
+@{
+    ViewBag.Title = "Users and roles";
+}
+
+</br>
+</br>
+<h2>Roles</h2>
+<table id="roles" class="table table-dark table-striped">
+    <thead>
+        <tr>
+            <th>Role Id</th>
+            <th>Role name</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var role in Model.Roles)
+        {
+        <tr>
+            <td>@role.Id</td>
+            <td>@role.Name</td>
+            <td>@Html.ActionLink("Delete", "DeleteRole", "Administration", new { @id = role.Id }, null)</td>
+        </tr>
+        }
+    </tbody>
+</table>
+
+</br>
+</br>
+
+
+<a class="create-button" asp-page="/Account/Register" asp-area="Identity"><h2>New client registration</h2></a>
+
+<h2>Users</h2>
+
+<table id="users" class="table table-dark table-striped">
+    <thead>
+        <tr>
+            <th>User Id</th>
+            <th>User name</th>
+            <th>Email</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model.Users)
+        {
+            <tr>
+                <td>@user.Id</td>
+                <td>@user.UserName</td>
+                <td>@user.Email</td>
+                <td>@Html.ActionLink("Delete", "Delete", "Administration", new { @id = user.Id }, null)</td>
+            </tr>
+        }
+    </tbody>
+</table>
+</br>
+</br>
+@*
+
+<table id="clients" class="table table-dark table-striped">
+    <thead>
+        <tr>
+            <th>User Id</th>
+            <th>Id Passport</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Address</th>
+            <th>Phone number</th>
+            <th>Birthday</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model.Clients)
+        {
+            <tr>
+                <td>@user.Id</td>
+                <td>@user.IdPassport</td>
+                <td>@user.FirstName</td>
+                <td>@user.LastName</td>
+                <td>@user.Address</td>
+                <td>@user.Phone</td>
+                <td>@user.DateBirth</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<table id="clientOrders" class="table table-dark table-striped">
+    <thead>
+        <tr>
+            <th>IdUser</th>
+            <th>IdPassort</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model.ClientOrders)
+        {
+            <tr>
+                <td>@user.IdUser</td>
+                <td>@user.Id</td>
+            </tr>
+        }
+    </tbody>
+</table> 
+*@

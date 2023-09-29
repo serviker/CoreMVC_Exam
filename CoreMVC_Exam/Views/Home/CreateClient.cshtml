@@ -1,0 +1,135 @@
+﻿@model CoreMVC_Exam.Models.Client
+
+@{
+    ViewData["Title"] = "CreateClient";
+}
+
+<h1>Create Client</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreateClient" id="validForm">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Id" class="control-label"></label>
+                <input asp-for="Id" class="form-control" />
+                <span asp-validation-for="Id" class="text-danger"></span> 
+            </div>
+            <div class="form-group">
+                <label asp-for="IdPassport" class="control-label"></label>
+                <input asp-for="IdPassport" class="form-control" />
+                <span asp-validation-for="IdPassport" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-label"></label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address" class="control-label"></label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Phone" class="control-label"></label>
+                <input asp-for="Phone" class="form-control" />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateBirth" class="control-label"></label>
+                <input asp-for="DateBirth" class="form-control" />
+                <span asp-validation-for="DateBirth" class="text-danger"></span>
+            </div>
+            </br>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-outline-success" />
+                <button class="btn btn-outline-info" onclick="@("window.location.href='" + @Url.Action("Clients", "Home") + "'");">Back to List</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+<script>
+
+    $('#validForm').submit(function (e) {
+
+        // предовратить отправку формы
+        e.preventDefault();
+
+        // подача Ajax-запроса на сервер при помощи JQuery
+        $.ajax({
+            url: '/api/Client/', // + $('#Id').val(),
+            method: "POST",
+            data: JSON.stringify({
+                id: $('#Id').val(),
+                idPassport: $('#IdPassport').val(),
+                firstName: $('#FirstName').val(),
+                lastName: $('#LastName').val(),
+                address: $('#Address').val(),
+                phone: $('#Phone').val(),
+                dateBirth: $('#DateBirth').val()
+            }),
+            dataType: 'JSON',
+            contentType: 'application/json',
+            cache: false,
+            processData: false,
+            // beforeSend: function (xheader) {
+            //     var token = sessionStorage.getItem(tokenKey);
+            //     console.log(token);
+            //     xheader.setRequestHeader("Authorization", "Bearer " + token);
+            // },
+            success: function (data) {
+                console.log(data);
+                document.location.href = "/Home/Clients";
+            },
+            error: function (data) {
+                onError(data);
+            }
+        })
+    });
+
+    function onError(data) {
+        console.log(data);
+        //alert(data);
+
+        // скрыть все ошибки, показанные на предыдущем шаге валидации
+        $("input").removeClass('input-validation-error');
+        $("select").removeClass('input-validation-error');
+        $("span[data-valmsg-for]").removeClass('field-validation-error');
+        $("span[data-valmsg-for]").addClass('field-validation-valid');
+        $("span[data-valmsg-for]").text("");
+
+        // если произошла ошибка валидации
+        if (data.status == 400) {
+            console.log(data.responseJSON);
+
+            // перебрать все полученные ошибки валидации
+            //$.each(data.responseJSON.ModelState, function (key, value) {
+            $.each(data.responseJSON.errors, function (key, value) {
+                //key = key.split('.')[1];
+
+                console.log(key);
+                console.log(value);
+
+                // выделить текстовое поле с ошибкой
+                var filter = "input[name='" + key + "']";
+                $(filter).addClass('input-validation-error');
+
+                // показать сообщение об ошибке для каждого текстового поля с ошибкой
+                var validationMessageElement = $('span[data-valmsg-for="' + key + '"]');
+                validationMessageElement.removeClass('field-validation-valid');
+                validationMessageElement.addClass('field-validation-error');
+                validationMessageElement.text(value[0]);
+            });
+        }
+    }
+
+</script>

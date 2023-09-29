@@ -1,0 +1,54 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using CoreMVC_Exam.Areas.Identity.Data
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+
+                   
+<ul class="navigation">
+    @if (SignInManager.IsSignedIn(User))
+    {
+        if (User.IsInRole("Admin"))
+        {
+            <li>
+                <a asp-area="" asp-controller="Home" asp-action="Clients">Clients<span class="ui_icon home"></span></a>
+            </li>
+
+            <li>
+                <a asp-area="" asp-controller="Home" asp-action="Products">Products<span class="ui_icon aboutus"></span></a>
+            </li>
+
+            <li>
+                <a asp-area="" asp-controller="Home" asp-action="Orders">Orders<span class="ui_icon services"></span></a>
+            </li>
+
+            <li>
+                <a asp-area="" asp-controller="Home" asp-action="Categories">Categories<span class="ui_icon gallery"></span></a>
+            </li>
+
+            <li>
+                <a asp-area="" asp-controller="Administration" asp-action="Index">Admin<span class="ui_icon contactus"></span></a>
+            </li>
+        }
+        else
+        {
+            <li><a asp-area="" asp-controller="Home" asp-action="Orders">Orders</a></li>
+
+            <li class="navigation">
+               >
+                <a id="manage" class="navigation" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">@UserManager.GetUserName(User)!</a>
+            </li>
+        }
+        <li >
+            <a id="logout" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })"><b>LogOut</b></a>
+        </li>
+    }
+    else
+    {
+    <li>
+       <a id="login" asp-area="Identity" asp-page="/Account/LogIn"><b>LogIn</b></a>
+    </li>
+    }
+</ul>
+              
